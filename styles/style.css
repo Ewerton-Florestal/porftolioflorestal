@@ -1,157 +1,179 @@
- * {
+ /* Reset básico para remover margens e paddings padrões */
+* {
     margin: 0;
     padding: 0;
- }
-
-:root {
-    --cor-primaria: #1A120B;
-    --cor-secundaria: #D5CEA3;
-    --cor-terciaria: #E5E5CB;
-    --cor-hover: #3C2A21;
-
-    --fonte-primaria: "Krona One", sans-serif;
-    --fonte-secundaria: "Montserrat", sans-serif;
 }
 
+/* Definição de variáveis CSS para cores e fontes, facilitando a manutenção */
+:root {
+    --cor-primaria: #1A120B; /* Cor de fundo principal */
+    --cor-secundaria: #D5CEA3; /* Cor principal do texto */
+    --cor-terciaria: #E5E5CB; /* Cor secundária do texto e links */
+    --cor-hover: #3C2A21; /* Cor para hover em links e botões */
+
+    --fonte-primaria: "Krona One", sans-serif; /* Fonte principal para títulos */
+    --fonte-secundaria: "Montserrat", sans-serif; /* Fonte secundária para texto */
+}
+
+/* Estilo básico do corpo do documento, aplicando as cores de fundo e texto */
 body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    box-sizing: border-box
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
 }
 
+/* Estilização do cabeçalho, incluindo padding */
 .cabecalho {
-    padding: 2% 0 0 15%;
-
+    padding: 2% 0 0 15%; /* Espaçamento interno para posicionar o conteúdo do cabeçalho */
 }
 
+/* Estilização da navegação do cabeçalho, usando flexbox para alinhamento */
 .cabecalho__menu{
-    display: flex;
-    gap: 80px;
+    display: flex; /* Ativa o layout flexível */
+    gap: 80px; /* Espaçamento entre os itens do menu */
 }
 
+/* Estilização dos links do menu, incluindo fonte, tamanho, peso, cor e remoção do sublinhado */
 .cabecalho__menu__link {
-    font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--cor-terciaria);
-    text-decoration: none;
+    font-family: var(--fonte-secundaria); /* Aplica a fonte secundária */
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+    font-weight: 600; /* Peso da fonte para destaque */
+    color: var(--cor-terciaria); /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado dos links */
 }
 
+/* Estilo da seção de apresentação */
 .apresentacao {
-    padding: 2% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 82px;
+    padding: 2% 15%; /* Espaçamento interno para a seção */
+    display: flex; /* Ativa o layout flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    gap: 82px; /* Espaçamento entre os itens */
 }
 
+/* Estilo do conteúdo da apresentação */
 .apresentacao__conteudo {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    width: 50%; /* Define a largura do conteúdo para metade do contêiner pai */
+    display: flex; /* Ativa o layout flexível */
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 40px; /* Espaçamento entre os itens */
 }
 
+/* Estilo do título da seção de apresentação */
 .apresentacao__conteudo__titulo {
-    font-size: 2.25rem;    
-    font-family: var(--fonte-primaria);
-    text-align: justify;
+    font-size: 2.25rem; /* Tamanho da fonte do título */
+    font-family: var(--fonte-primaria); /* Fonte primária para o título */
+    text-align: justify; /* Justifica o texto do título */
 }
 
+/* Estilo para destacar títulos dentro do conteúdo */
 .titulo-destaque {
-    color:var(--cor-terciaria);
+    color: var(--cor-terciaria); /* Cor para títulos destacados */
 }
 
+/* Estilo dos parágrafos da seção de apresentação */
 .apresentacao__conteudo__paragrafo {
-    font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
-    text-align: justify;
+    font-size: 1.5rem; /* Tamanho da fonte dos parágrafos */
+    font-family: var(--fonte-secundaria); /* Fonte secundária para os parágrafos */
+    text-align: justify; /* Justifica o texto dos parágrafos */
 }
 
+/* Estilo dos links na seção de apresentação */
 .apresentacao__links {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+    display: flex; /* Ativa o layout flexível */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+    gap: 32px; /* Espaçamento entre os itens */
 }
 
+/* Estilo para subtítulos dentro da seção de links */
 .apresentação__links__subtitulo {
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-family: var(--fonte-primaria); /* Usa a fonte primária para subtítulos */
+    font-weight: 400; /* Peso normal da fonte */
+    font-size: 1.5rem; /* Tamanho da fonte ajustado para 1.5rem */
 }
 
+/* Estilo para links na seção de apresentação */
 .apresentacao__links__link {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    border: 2px solid var(--cor-terciaria);
-    width: 50%;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 1.5rem;
-    padding: 21.5px 0px;
-    text-decoration: none;
-    color: #F6F6F6;
-    font-family: var(--fonte-secundaria);
-    font-weight: 600;
+    display: flex; /* Ativa o layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 16px; /* Espaçamento entre elementos internos */
+    border: 2px solid var(--cor-terciaria); /* Borda sólida com cor terciária */
+    width: 50%; /* Largura definida como metade do contêiner pai */
+    text-align: center; /* Texto centralizado */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1.5rem; /* Tamanho da fonte ajustado para 1.5rem */
+    padding: 21.5px 0px; /* Espaçamento interno vertical */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #F6F6F6; /* Cor do texto */
+    font-family: var(--fonte-secundaria); /* Usa a fonte secundária */
+    font-weight: 600; /* Peso da fonte para destaque */
 }
 
+/* Estilo para o estado hover dos links */
 .apresentacao__links__link:hover {
-    background-color: var(--cor-hover);
+    background-color: var(--cor-hover); /* Cor de fundo ao passar o mouse */
 }
 
+/* Estilo para imagens na seção de apresentação */
 .apresentacao__imagem {
-    width: 50%;
-    border-radius: 50%;
+    width: 50%; /* Define a largura da imagem como metade do contêiner pai */
+    border-radius: 50%; /* Torna a imagem circular */
 }
 
+/* Estilo para a imagem de apresentação */
 .apresentacao__imagem__about {
-    width: 25%;
-    border-radius: 50%;
-    position: fixed;
-    top: 100px;
-    right: 250px;
+    width: 25%; /* Define a largura da imagem como 25% do contêiner pai */
+    border-radius: 50%; /* Torna a imagem circular */
+    position: fixed; /* Posicionamento fixo na tela */
+    top: 100px; /* Distância do topo da página */
+    right: 250px; /* Distância da direita da página */
 }
 
+/* Estilo para o rodapé da página */
 .rodape {
-    padding: 24px;
-    text-align: center;
-    background-color: var(--cor-terciaria);
-    color: var(--cor-primaria);
-    font-family: var(fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 400;
+    padding: 24px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    background-color: var(--cor-terciaria); /* Cor de fundo */
+    color: var(--cor-primaria); /* Cor do texto */
+    font-family: var(--fonte-secundaria); /* Fonte do texto */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
 }
 
+/* Estilos para dispositivos com largura máxima de 1200px */
 @media (max-width: 1200px) {
-    
+    /* Ajustes no cabeçalho */
     .cabecalho {
-        padding: 6%;
+        padding: 6%; /* Aumenta o espaçamento interno */
     }
     
+    /* Ajustes no menu do cabeçalho */
     .cabecalho__menu {
-        justify-content: center;
+        justify-content: center; /* Centraliza os itens do menu */
     }
 
+    /* Ajustes na seção de apresentação */
     .apresentacao {
-        flex-direction: column-reverse;
-        padding: 5%;
+        flex-direction: column-reverse; /* Inverte a ordem dos itens para coluna */
+        padding: 5%; /* Ajusta o espaçamento interno */
     }
 
+    /* Ajustes no conteúdo da apresentação */
     .apresentacao__conteudo {
-        width: auto;
+        width: auto; /* Largura automática para se ajustar ao contêiner pai */
     }
 
+    /* Ajustes no título da apresentação */
     .apresentacao__conteudo__titulo {
-        text-align: center;
+        text-align: center; /* Centraliza o texto do título */
     }
 
+    /* Ajustes na imagem de apresentação para dispositivos menores */
     .apresentacao__imagem__about {
-        width: 50%;
-        border-radius: 50%;
-        position: static;
+        width: 50%; /* Aumenta a largura da imagem para 50% do contêiner pai */
+        border-radius: 50%; /* Mantém a imagem circular */
+        position: static; /* Remove o posicionamento fixo */
     }
-
 }
