@@ -6,10 +6,10 @@
 
 /* Definição de variáveis CSS para cores e fontes, facilitando a manutenção */
 :root {
-    --cor-primaria: #1A120B; /* Cor de fundo principal */
-    --cor-secundaria: #D5CEA3; /* Cor principal do texto */
-    --cor-terciaria: #E5E5CB; /* Cor secundária do texto e links */
-    --cor-hover: #3C2A21; /* Cor para hover em links e botões */
+    --cor-primaria: #063940; /* Cor de fundo principal */
+    --cor-secundaria: #ccf4f7; /* Cor principal do texto */
+    --cor-terciaria: #ece1c3; /* Cor secundária do texto e links */
+    --cor-hover: #195e63; /* Cor para hover em links e botões */
 
     --fonte-primaria: "Krona One", sans-serif; /* Fonte principal para títulos */
     --fonte-secundaria: "Montserrat", sans-serif; /* Fonte secundária para texto */
