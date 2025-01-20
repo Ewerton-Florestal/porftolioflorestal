@@ -1,4 +1,4 @@
- /* Reset básico para remover margens e paddings padrões */
+/* Reset básico para remover margens e paddings padrões */
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ body {
 }
 
 /* Estilização da navegação do cabeçalho, usando flexbox para alinhamento */
-.cabecalho__menu{
+.cabecalho__menu {
     display: flex; /* Ativa o layout flexível */
     gap: 80px; /* Espaçamento entre os itens do menu */
 }
@@ -88,7 +88,7 @@ body {
 }
 
 /* Estilo para subtítulos dentro da seção de links */
-.apresentação__links__subtitulo {
+.apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria); /* Usa a fonte primária para subtítulos */
     font-weight: 400; /* Peso normal da fonte */
     font-size: 1.5rem; /* Tamanho da fonte ajustado para 1.5rem */
@@ -143,7 +143,7 @@ body {
 }
 
 /* Estilos para dispositivos com largura máxima de 1200px */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     /* Ajustes no cabeçalho */
     .cabecalho {
         padding: 6%; /* Aumenta o espaçamento interno */
@@ -176,4 +176,136 @@ body {
         border-radius: 50%; /* Mantém a imagem circular */
         position: static; /* Remove o posicionamento fixo */
     }
+    
+    .galeria__grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas menores para caber em telas pequenas */
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .galeria__imagem {
+        width: 100%; /* A imagem ocupa toda a largura disponível */
+    }
+
+    .galeria__descricao {
+        font-size: 0.9rem; /* Reduz um pouco o tamanho da descrição */
+    }
+}
+
+/* Estilo para o dropdown */
+.cabecalho__menu__dropdown {
+    position: relative; /* Necessário para posicionar o conteúdo do dropdown */
+}
+
+.cabecalho__menu__dropdown__content {
+    display: none; /* Oculta o conteúdo inicialmente */
+    position: absolute; /* Posiciona abaixo do link principal */
+    background-color: var(--cor-primaria); /* Fundo do dropdown */
+    min-width: 200px; /* Largura mínima do menu */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para o menu */
+    z-index: 1; /* Garante que o dropdown fique sobre outros elementos */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.cabecalho__menu__dropdown__content a {
+    color: var(--cor-terciaria); /* Cor do texto dos links */
+    padding: 12px 16px; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    display: block; /* Cada link ocupa uma linha */
+    font-family: var(--fonte-primaria); /* Fonte primária para os links */
+    font-size: 1rem; /* Tamanho da fonte dos links */
+}
+
+.cabecalho__menu__dropdown__content a:hover {
+    background-color: var(--cor-hover); /* Cor de fundo ao passar o mouse */
+}
+
+/* Exibe o dropdown ao passar o mouse sobre o item principal */
+.cabecalho__menu__dropdown:hover .cabecalho__menu__dropdown__content {
+    display: block; /* Exibe o conteúdo do dropdown */
+}
+
+/* Estilo para o título da galeria */
+.galeria__titulo {
+    font-family: var(--fonte-primaria); /* Fonte primária para o título */
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Margem superior e inferior */
+    color: var(--cor-secundaria); /* Cor do texto */
+}
+
+/* Estilo para a descrição da galeria */
+.galeria__descricao {
+    font-family: var(--fonte-secundaria); /* Fonte secundária para a descrição */
+    font-size: 1.2rem; /* Tamanho da fonte da descrição */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 30px; /* Margem inferior */
+    color: var(--cor-secundaria); /* Cor do texto */
+}
+
+/* Grid responsivo para organizar os itens */
+.galeria__grid {
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Define colunas responsivas */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para cada item da galeria */
+.galeria__item {
+    display: flex; /* Ativa o layout flexível */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+    background-color: var(--cor-primaria); /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para os itens */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para transformações */
+}
+
+/* Efeito hover nos itens */
+.galeria__item:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Estilo para as imagens */
+.galeria__imagem {
+    width: 100%; /* A imagem ocupa toda a largura disponível */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+/* Estilo para as descrições abaixo das imagens */
+.galeria__descricao {
+    font-size: 1rem; /* Tamanho da fonte da descrição */
+    margin-top: 10px; /* Margem superior */
+    text-align: center; /* Centraliza o texto */
+    color: var(--cor-terciaria); /* Cor do texto */
+}
+
+/* Estilo para o lightbox */
+.lightbox {
+    position: fixed; /* Posicionamento fixo na tela */
+    top: 0; /* Alinhamento ao topo */
+    left: 0; /* Alinhamento à esquerda */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    display: flex; /* Ativa o layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    z-index: 1000; /* Garante que o lightbox fique sobre outros elementos */
+}
+
+.lightbox img {
+    max-width: 90%; /* Largura máxima de 90% */
+    max-height: 90%; /* Altura máxima de 90% */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra para a imagem */
+}
+
+/* Efeito hover nas imagens da galeria */
+.galeria__imagem:hover {
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+    transition: transform 0.3s; /* Transição suave para transformações */
 }

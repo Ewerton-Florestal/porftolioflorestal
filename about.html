@@ -2,12 +2,22 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <!-- Define a viewport para garantir a responsividade em dispositivos móveis -->
+    <!-- Define a largura do viewport para a largura do dispositivo e a escala inicial para 1 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título da página, importante para SEO e usabilidade -->
-    <title>Sobre mim</title>
-    <!-- Link para a folha de estilos externa, corrigindo o caminho para usar barra normal (/) -->
+    <!-- Título da página -->
+    <title>Portfolio</title>
+    <!-- Link para a folha de estilos principal -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- Pré-conexão com o Google Fonts para melhorar o carregamento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Pré-conexão com o Google Fonts para melhorar o carregamento (com suporte a CORS) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa a fonte Krona One do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <!-- Importa as fontes Krona One e Montserrat em diferentes pesos do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Link para a folha de estilos do Academicons para ícones acadêmicos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@latest/css/academicons.min.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -17,13 +27,21 @@
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <!-- Link para a página sobre mim -->
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <div class="cabecalho__menu__dropdown">
+                <a class="cabecalho__menu__link" href="#">Experiências</a>
+                <div class="cabecalho__menu__dropdown__content">
+                    <a href="geoprocessamento.html">Geoprocessamento</a>
+                    <a href="engenharia-florestal.html">Engenharia Florestal</a>
+                    <a href="machine-learning.html">Machine Learning</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="apresentacao">
         <!-- Seção principal contendo conteúdo sobre experiências e formação -->
         <section class="apresentacao__conteudo">
             <!-- Título da seção -->
-            <h1 class="apresentacao__conteudo__titulo">Um Pouco Sobre Minhas Experiências</h1>
+            <h1 class="apresentacao__conteudo__titulo">Um Pouco Sobre Minha Jornada</h1>
             <!-- Parágrafo de introdução com destaque -->
             <p class="apresentacao__conteudo__paragrafo">🌳🤖 <strong class="titulo-destaque">Engenheiro Florestal apaixonado por tecnologia e inovação:</strong></p>
             <!-- Descrição da experiência e compromisso com a preservação ambiental -->
@@ -67,6 +85,8 @@
         <img class="apresentacao__imagem__about" src="assets/foto.jpg" alt="Foto Usuario">
     </main>
     <!-- Rodapé da página com informações do autor -->
+        <script src="scripts/galeria.js"></script>
+        <script src="scripts\scripts.js"></script>
         <footer class="rodape"><p>Desenvolvido por Ewerton</p></footer>
 </body>
 </html>
