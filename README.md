@@ -30,9 +30,7 @@ O portfólio é uma vitrine interativa, com funcionalidades modernas e responsiv
 
 📂 Estrutura do Projeto
 
-plaintext
-Copiar
-Editar
+```plaintext
 .
 ├── index.html          # Página inicial do portfólio
 ├── about.html          # Página "Sobre mim"
@@ -45,6 +43,7 @@ Editar
 │   └── galeria.js      # Script para funcionalidade de lightbox
 ├── assets/             # Imagens e outros recursos estáticos
 └── README.md           # Documentação do projeto
+```
 
 🌐 Como Visualizar
 
