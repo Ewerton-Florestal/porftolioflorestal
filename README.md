@@ -15,18 +15,18 @@ O portfólio é uma vitrine interativa, com funcionalidades modernas e responsiv
 
 ✨ Destaques do Projeto
 
-Interface Responsiva: Design ajustável para qualquer dispositivo (desktop, tablet, smartphone).
-Galeria Interativa: Exibição dinâmica de mapas e projetos realizados.
-Design Personalizado: Uso de CSS moderno com variáveis e transições para uma experiência visual atraente.
-Funcionalidades Dinâmicas: Menus dropdown e lightbox para ampliar imagens de projetos.
+- Interface Responsiva: Design ajustável para qualquer dispositivo (desktop, tablet, smartphone).
+- Galeria Interativa: Exibição dinâmica de mapas e projetos realizados.
+- Design Personalizado: Uso de CSS moderno com variáveis e transições para uma experiência visual atraente.
+- Funcionalidades Dinâmicas: Menus dropdown e lightbox para ampliar imagens de projetos.
 
 🛠️ Tecnologias Utilizadas
 
-HTML5: Estruturação semântica e acessível.
-CSS3: Estilização responsiva, animações e transições modernas.
-JavaScript: Funcionalidades interativas (dropdown, lightbox).
-Google Fonts: Tipografia profissional para melhorar a legibilidade.
-Grid Responsivo: Organização eficiente do layout para diferentes tamanhos de tela.
+- HTML5: Estruturação semântica e acessível.
+- CSS3: Estilização responsiva, animações e transições modernas.
+- JavaScript: Funcionalidades interativas (dropdown, lightbox).
+- Google Fonts: Tipografia profissional para melhorar a legibilidade.
+- Grid Responsivo: Organização eficiente do layout para diferentes tamanhos de tela.
 
 📂 Estrutura do Projeto
 
@@ -50,31 +50,35 @@ Editar
 
 Clone este repositório:
   ```bash
-git clone https://github.com/Ewerton-Florestal/portfolio.git
+git clone https://github.com/Ewerton-Florestal/porftolioflorestal
   ```
 Navegue até a pasta do projeto:
   ```bash
-cd portfolio
+cd porftolioflorestal
   ```
 Abra o arquivo index.html em qualquer navegador.
 
 🖼️ Demonstração
 
 Página Inicial:
-Introdução: Apresentação geral e links para redes sociais.
-Visual Moderno: Estilo limpo e atrativo com foco em tecnologia e engenharia florestal.
+
+- Introdução: Apresentação geral e links para redes sociais.
+- Visual Moderno: Estilo limpo e atrativo com foco em tecnologia e engenharia florestal.
+
 Experiências:
-Dropdown Dinâmico: Divisão por áreas (Geoprocessamento, Engenharia Florestal e Machine Learning).
-Galeria Interativa: Projetos com mapas clicáveis e lightbox.
-Geoprocessamento:
-Detalhes Técnicos: Projetos de mapeamento para análise ambiental.
-Imagens Ampliáveis: Clique em qualquer mapa para visualizá-lo em tela cheia.
+
+- Dropdown Dinâmico: Divisão por áreas (Geoprocessamento, Engenharia Florestal e Machine Learning).
+- Galeria Interativa: Projetos com mapas clicáveis e lightbox.
+  
+  Geoprocessamento:
+- Detalhes Técnicos: Projetos de mapeamento para análise ambiental.
+- Imagens Ampliáveis: Clique em qualquer mapa para visualizá-lo em tela cheia.
 
 🎨 Ideias Futuras
 
-Tema Claro/Escuro: Alternar entre estilos de cores para maior personalização.
-Animações Avançadas: Tornar a navegação mais fluida e interativa.
-Seção de Contato Dinâmica: Inclusão de um formulário funcional.
+- Tema Claro/Escuro: Alternar entre estilos de cores para maior personalização.
+- Animações Avançadas: Tornar a navegação mais fluida e interativa.
+- Seção de Contato Dinâmica: Inclusão de um formulário funcional.
 
 🤝 Contribuição
 Contribuições são bem-vindas! Se você tem ideias ou melhorias, sinta-se à vontade para abrir um pull request ou relatar um problema em Issues.
