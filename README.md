@@ -49,13 +49,13 @@ Editar
 🌐 Como Visualizar
 
 Clone este repositório:
-
+  ```bash
 git clone https://github.com/Ewerton-Florestal/portfolio.git
-
+  ```
 Navegue até a pasta do projeto:
-
+  ```bash
 cd portfolio
-
+  ```
 Abra o arquivo index.html em qualquer navegador.
 
 🖼️ Demonstração
