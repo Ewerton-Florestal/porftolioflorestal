@@ -49,9 +49,11 @@ Editar
 🌐 Como Visualizar
 
 Clone este repositório:
+
 git clone https://github.com/Ewerton-Florestal/portfolio.git
 
 Navegue até a pasta do projeto:
+
 cd portfolio
 
 Abra o arquivo index.html em qualquer navegador.
