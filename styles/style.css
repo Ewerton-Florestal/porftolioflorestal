@@ -142,8 +142,8 @@ body {
     font-weight: 400; /* Peso da fonte */
 }
 
-/* Estilos para dispositivos com largura máxima de 1200px */
-@media (max-width: 768px) {
+/* Estilos para dispositivos com largura máxima de 768px */
+@media (max-width: 1200px) {
     /* Ajustes no cabeçalho */
     .cabecalho {
         padding: 6%; /* Aumenta o espaçamento interno */
@@ -151,7 +151,15 @@ body {
     
     /* Ajustes no menu do cabeçalho */
     .cabecalho__menu {
-        justify-content: center; /* Centraliza os itens do menu */
+        flex-direction: column; /* Alinha os itens do menu em coluna */
+        align-items: center; /* Centraliza os itens do menu */
+        gap: 20px; /* Reduz o espaçamento entre os itens do menu */
+    }
+
+    /* Ajustes nos links do menu do cabeçalho */
+    .cabecalho__menu__link {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte dos links */
+        padding: 10px; /* Adiciona espaçamento interno aos links */
     }
 
     /* Ajustes na seção de apresentação */
@@ -168,6 +176,7 @@ body {
     /* Ajustes no título da apresentação */
     .apresentacao__conteudo__titulo {
         text-align: center; /* Centraliza o texto do título */
+        font-size: 1.8rem; /* Reduz o tamanho da fonte do título */
     }
 
     /* Ajustes na imagem de apresentação para dispositivos menores */
@@ -189,6 +198,14 @@ body {
     .galeria__descricao {
         font-size: 0.9rem; /* Reduz um pouco o tamanho da descrição */
     }
+
+     /* Ajustes no título da galeria para dispositivos móveis */
+     .galeria__titulo {
+        font-size: 1.8rem; /* Ajusta o tamanho da fonte do título */
+        padding: 10px; /* Adiciona espaçamento interno ao título */
+        text-align: center; /* Centraliza o texto do título */
+    }
+    
 }
 
 /* Estilo para o dropdown */
