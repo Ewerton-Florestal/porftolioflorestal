@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura do viewport para a largura do dispositivo e a escala inicial para 1 -->
+    <title> Inventario</title> <!-- Título da página -->
+    <!-- Link para a folha de estilos principal -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Pré-conexão com o Google Fonts para melhorar o carregamento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Pré-conexão com o Google Fonts para melhorar o carregamento (com suporte a CORS) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa a fonte Krona One do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <!-- Importa as fontes Krona One e Montserrat em diferentes pesos do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Link para a folha de estilos do Academicons para ícones acadêmicos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@latest/css/academicons.min.css">
+</head>
+<body>
+    <header class="cabecalho"> <!-- Cabeçalho da página -->
+        <nav class="cabecalho__menu"> <!-- Navegação principal -->
+            <a class="cabecalho__menu__link" href="index.html">Home</a> <!-- Link para a página inicial -->
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a> <!-- Link para a página sobre mim -->
+            <div class="cabecalho__menu__dropdown"> <!-- Menu suspenso para experiências -->
+                <a class="cabecalho__menu__link" href="#">Experiências</a> <!-- Link para o menu de experiências -->
+                <div class="cabecalho__menu__dropdown__content"> <!-- Conteúdo do menu suspenso -->
+                    <a href="Geoprocessamento.html">Geoprocessamento</a> <!-- Link para a página de Geoprocessamento -->
+                    <a href="inventario.html">Inventário Florestal</a> <!-- Link para a página de Engenharia Florestal -->
+                    <a href="machine-learning.html">Python e R</a> <!-- Link para a página de Machine Learning -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="galeria"> <!-- Seção principal da galeria -->
+        <h1 class="galeria__titulo">Inventários Florestais</h1> <!-- Título da galeria -->
+        <p class="galeria__descricao">Aqui estão alguns inventários florestais realizados, demonstrando minha experiência na área.</p> <!-- Descrição da galeria -->
+        <section class="galeria__grid"> <!-- Grid da galeria -->
+            <!-- Exemplo de item de galeria -->
+            <div class="galeria__item_inventario">
+                <img src="assets\inventario\teste_especie.jpg" alt="Inventário Teste de espécies" class="galeria__imagem">
+                <p class="galeria__descricao">Inventário semestral de um teste de Espécies florestais em Mossoró - RN</p> 
+            </div>
+            <div class="galeria__item_inventario">
+                <img src="assets\inventario\inventario_sabia.jpg" alt="Inventário sabia" class="galeria__imagem">
+                <p class="galeria__descricao">Inventário semestral de um plantio experimental de sabiá em Mossoró - RN</p> 
+            </div>
+            <div class="galeria__item_inventario">
+                <img src="assets\inventario\inventario_nativas.jpg" alt="Inventário nativas" class="galeria__imagem">
+                <p class="galeria__descricao">Inventário realizad em uma floresta nativa na fazenda experimental da UFERSA</p> 
+            </div>
+            <div class="galeria__item_inventario">
+                <img src="assets\inventario\Inventario_ajuda.jpg" alt="Inventário nativas ajuda" class="galeria__imagem">
+                <p class="galeria__descricao">Inventário realizado em uma floresta nativa no Rio Grande do Norte</p> 
+            </div>
+            <div class="galeria__item_inventario">
+                <img src="assets\inventario\Inventario_IFipanguacu.jpg" alt="Inventário IF ipanguaçu" class="galeria__imagem">
+                <p class="galeria__descricao">Inventário realizado em um plantio de Algaroda no IF de Ipanguaçu</p> 
+            </div>
+        </section>
+    </main>
+    <footer class="rodape"> <!-- Rodapé da página -->
+        <p>Desenvolvido por Ewerton</p>
+    </footer>
+    <!-- Script para funcionalidade de ampliação -->
+    <script src="scripts/galeria.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
